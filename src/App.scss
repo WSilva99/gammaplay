@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import './custom-bootstrap.scss';
+
+.section-title {
+  color: #FFFFFF;
+}
+
+.game-cover {
+  transition: transform 300ms ease-in-out 100ms;
+}
+
+.games-grid:hover .game-cover {
+  transform: translateX(-0.25%);
+}
+
+.game-cover:hover ~ .game-cover {
+  transform: translateX(0.25%);
+}
+
+.game-cover:hover {
+  transform: scale(1.04) !important;
+}
+
+.game-info {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000000, .3);
+  color: #FFFFFF;
+}
+
+.game-cover {
+  .game-info {
+    opacity: 0;
+  }
+}
+
+.game-cover:hover {
+  .game-info {
+    opacity: 1;
+  }
+}
+
+.gift-card {
+  transition: transform 300ms ease-in-out 100ms;
+  &:hover {
+    transform: scale(1.04) !important;
+  }
+}
+
+.gift-card-info {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000000, .3);
+  color: #FFFFFF;
+}
+
+.media-link {
+  padding: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  transition: transform 300ms ease-in-out 100ms;
+
+  &:hover {
+    transform: scale(1.05) !important;
+  }
+}

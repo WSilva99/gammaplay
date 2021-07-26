@@ -1,0 +1,23 @@
+
+$theme-colors: (
+  "primary":    #63DC3E,
+  "secondary":  #01C8EF,
+  "success":    #63DC3E,
+  "info":       #01C8EF,
+  "warning":    #ebef01,
+  "danger":     #E51376,
+  "light":      #FFFFFF,
+  "dark":       #101B37
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: #101B37;
+  background-image: url('./assets/Background.png');
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
